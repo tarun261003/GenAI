@@ -11,7 +11,7 @@
 .wrapper-parent {
     width: 300px;
     height: 80px;
-    margin-right: 200px;
+    margin-right: 13%;
     /* background-color: black; */
     /* border: 1px solid black; */
     border-radius: 50px;
@@ -137,7 +137,7 @@ body{
   position: absolute;
   width: 10px;
   height: 30px;
-  background: #ffd300;
+  background: #4285F4;
   top: 0;
   opacity: 0;
 }
@@ -233,7 +233,7 @@ body{
   -webkit-animation-duration: 818ms;
 }
 .confetti-piece:nth-child(odd) {
-  background: #7431e8;
+  background: #FBBC05;
 }
 .confetti-piece:nth-child(even) {
   z-index: 1;
@@ -250,7 +250,7 @@ body{
   -webkit-animation-delay: 1000ms;
 }
 .confetti-piece:nth-child(4n-7) {
-background: red;
+background: #EA4335;
 }
 @-webkit-keyframes makeItRain {
   from {opacity: 0;}
