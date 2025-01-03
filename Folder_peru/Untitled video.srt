@@ -1,0 +1,1503 @@
+1
+00:00:00,911 --> 00:00:02,871
+Hello; I'm Taran Mangampalli. I'm a
+
+2
+00:00:03,471 --> 00:00:05,272
+finally a data science student at NRA
+
+3
+00:00:05,272 --> 00:00:07,472
+Institute of Technology. Today I'm gonna
+
+4
+00:00:07,472 --> 00:00:10,113
+discuss  these things of two tasks that
+
+5
+00:00:10,113 --> 00:00:11,833
+is given by Sethaphal as part of
+
+6
+00:00:11,833 --> 00:00:14,194
+hackathon. So as part of like
+
+7
+00:00:14,674 --> 00:00:16,834
+evaluation I'm doing this video. So let's
+
+8
+00:00:16,834 --> 00:00:18,275
+start the video with small
+
+9
+00:00:19,555 --> 00:00:22,355
+aim and all. So the aim is to build a
+
+10
+00:00:22,355 --> 00:00:24,916
+toolLike 2 applications where
+
+11
+00:00:25,076 --> 00:00:28,037
+one works on PDF and other thing works on
+
+12
+00:00:28,517 --> 00:00:30,357
+websites. Like we need to chat with
+
+13
+00:00:30,357 --> 00:00:32,357
+websites and PDFs in these two tasks
+
+14
+00:00:32,598 --> 00:00:34,158
+which are similar quite similar to each
+
+15
+00:00:34,158 --> 00:00:36,918
+other. The first task is very helpful
+
+16
+00:00:36,918 --> 00:00:39,719
+for our students where we study different
+
+17
+00:00:39,719 --> 00:00:42,120
+PDFs for exam purpose.
+
+18
+00:00:42,920 --> 00:00:45,800
+So it it it helps us to
+
+19
+00:00:45,800 --> 00:00:48,041
+understand the things and make life
+
+20
+00:00:48,041 --> 00:00:50,681
+easier. So the other task
+
+21
+00:00:50,681 --> 00:00:53,242
+also very helpful for us while learning
+
+22
+00:00:53,242 --> 00:00:56,042
+and building the things we we
+
+23
+00:00:56,282 --> 00:00:58,523
+like we usually go through different
+
+24
+00:00:58,523 --> 00:01:01,404
+websites and like get insights from them.
+
+25
+00:01:01,724 --> 00:01:04,364
+So these two tasks are very helpful for
+
+26
+00:01:04,364 --> 00:01:06,925
+our student life. So let's start with
+
+27
+00:01:07,325 --> 00:01:10,285
+quick background like these tasks are
+
+28
+00:01:10,285 --> 00:01:12,646
+of building a rack chain which is a
+
+29
+00:01:12,646 --> 00:01:15,326
+retrieval augmented generation. Which
+
+30
+00:01:15,326 --> 00:01:17,927
+helps us to obtain the concise
+
+31
+00:01:17,927 --> 00:01:20,528
+information or valuable information
+
+32
+00:01:20,768 --> 00:01:23,088
+from the LLM's. So
+
+33
+00:01:23,648 --> 00:01:26,049
+here we use the RAG for building these
+
+34
+00:01:26,249 --> 00:01:28,929
+applications and by using those
+
+35
+00:01:29,489 --> 00:01:32,210
+query chain we have done these things of
+
+36
+00:01:32,210 --> 00:01:34,090
+the two task. So these are the important
+
+37
+00:01:34,090 --> 00:01:35,571
+and relevance of the project. Advanced
+
+38
+00:01:35,571 --> 00:01:37,571
+information retrieval as I have discussed
+
+39
+00:01:37,571 --> 00:01:39,812
+before and real world applications as as
+
+40
+00:01:39,812 --> 00:01:42,452
+part of student view I have told this one
+
+41
+00:01:42,452 --> 00:01:45,093
+and we can also consider this for higher
+
+42
+00:01:45,413 --> 00:01:48,133
+like. of employees and all so
+
+43
+00:01:49,174 --> 00:01:51,894
+we have used several alums over
+
+44
+00:01:51,894 --> 00:01:54,015
+here so which is for fostering the
+
+45
+00:01:54,015 --> 00:01:56,135
+innovations and industry relevance is
+
+46
+00:01:56,135 --> 00:01:58,496
+nothing but we have I have discussed
+
+47
+00:01:58,496 --> 00:01:59,896
+before as part of student I have
+
+48
+00:02:00,376 --> 00:02:02,696
+discussed and another thing is as part of
+
+49
+00:02:02,856 --> 00:02:05,177
+an employee we can like
+
+50
+00:02:05,577 --> 00:02:07,497
+integrate these things in our lives and
+
+51
+00:02:07,657 --> 00:02:10,338
+make life easier so let's start with
+
+52
+00:02:10,818 --> 00:02:13,739
+a small likeLet me make this
+
+53
+00:02:13,739 --> 00:02:16,579
+concise and understand for the
+
+54
+00:02:16,779 --> 00:02:19,220
+like make a short note of this. The first
+
+55
+00:02:19,220 --> 00:02:21,940
+task was to build a
+
+56
+00:02:22,461 --> 00:02:24,941
+RAG application where the data will be
+
+57
+00:02:24,941 --> 00:02:27,022
+processed furtherly and it is stored in
+
+58
+00:02:27,022 --> 00:02:29,182
+the vector database and we need to handle
+
+59
+00:02:29,182 --> 00:02:31,022
+the query handling. Another thing is we
+
+60
+00:02:31,022 --> 00:02:33,263
+need to compare the videos over there and
+
+61
+00:02:33,503 --> 00:02:35,743
+another thing is like make a response
+
+62
+00:02:35,743 --> 00:02:38,504
+generation from the user query. So
+
+63
+00:02:38,504 --> 00:02:40,904
+these are the four like sub task of the
+
+64
+00:02:40,904 --> 00:02:43,585
+task one and the other thing is chart
+
+65
+00:02:43,585 --> 00:02:46,306
+with website using rag. This is our task
+
+66
+00:02:46,306 --> 00:02:48,946
+two where it is similar but the data has
+
+67
+00:02:48,986 --> 00:02:51,827
+been changed. Here the data will be
+
+68
+00:02:51,827 --> 00:02:54,387
+of website data. So
+
+69
+00:02:55,027 --> 00:02:56,868
+let us go through the architecture and
+
+70
+00:02:57,388 --> 00:02:59,708
+discuss further. So we had used the
+
+71
+00:02:59,708 --> 00:03:01,629
+Python for for collect.
+
+72
+00:03:02,229 --> 00:03:04,949
+Scripting and we had used IDE
+
+73
+00:03:05,630 --> 00:03:07,750
+and Chroma DB as a vector database. I had
+
+74
+00:03:07,750 --> 00:03:09,270
+gone through the different vector
+
+75
+00:03:09,350 --> 00:03:11,431
+databases such as Quadrant which I have
+
+76
+00:03:11,751 --> 00:03:14,151
+used previously in my previous internship
+
+77
+00:03:14,992 --> 00:03:17,432
+at Invoice Springboard. So for this I'm
+
+78
+00:03:17,432 --> 00:03:19,513
+going to the Chroma DB because it's quite
+
+79
+00:03:19,673 --> 00:03:22,313
+uh like the helpful
+
+80
+00:03:22,313 --> 00:03:25,034
+or these uh land chain because like
+
+81
+00:03:25,274 --> 00:03:27,554
+had used land chain because it uh similar
+
+82
+00:03:27,554 --> 00:03:30,155
+is the right. So there the land chain had
+
+83
+00:03:30,555 --> 00:03:33,435
+has like. Good documentation on
+
+84
+00:03:33,435 --> 00:03:35,956
+ChromaDB. So I had to choose the ChromaDB
+
+85
+00:03:35,956 --> 00:03:38,717
+over pattern and I had used the Gemini
+
+86
+00:03:39,597 --> 00:03:41,957
+AI for emitting. So here I
+
+87
+00:03:42,397 --> 00:03:44,958
+had searched for Open AI emitting but the
+
+88
+00:03:44,958 --> 00:03:47,598
+Open AI had stopped it's free
+
+89
+00:03:47,598 --> 00:03:50,079
+credits. So I had gone through the Gemini
+
+90
+00:03:50,799 --> 00:03:53,120
+Gemini AI emitting which is free of cost.
+
+91
+00:03:53,440 --> 00:03:56,360
+So this is the thing and the thing is for
+
+92
+00:03:56,360 --> 00:03:58,721
+evaluation purpose I had built a small UI
+
+93
+00:03:59,041 --> 00:04:01,761
+for better understanding and all. So let
+
+94
+00:04:01,761 --> 00:04:02,962
+us go through the architecture. Now
+
+95
+00:04:03,202 --> 00:04:04,882
+architecture of task one is nothing but
+
+96
+00:04:05,122 --> 00:04:07,643
+the user will provide the PDF. The PDF
+
+97
+00:04:07,643 --> 00:04:10,483
+will be passed to the OCR by using the
+
+98
+00:04:10,483 --> 00:04:13,124
+OCR module&#44; OCR or my PDF module
+
+99
+00:04:13,444 --> 00:04:15,684
+and it will be processed by by it's
+
+100
+00:04:16,564 --> 00:04:19,405
+like OCR&#44; my OCR&#44; my PDF
+
+101
+00:04:19,405 --> 00:04:22,246
+for module. The each text from the image
+
+102
+00:04:22,406 --> 00:04:25,326
+can be converted and returned a
+
+103
+00:04:26,006 --> 00:04:28,767
+OCR PDF file and the OCR PDF
+
+104
+00:04:28,767 --> 00:04:31,568
+file will be processed. by the
+
+105
+00:04:31,688 --> 00:04:33,768
+this code like
+
+106
+00:04:34,568 --> 00:04:36,889
+let me simplify this this is the OCR
+
+107
+00:04:37,849 --> 00:04:39,849
+like script it will convert the
+
+108
+00:04:40,490 --> 00:04:43,370
+general PDF to OCR PDF the OCR PDF
+
+109
+00:04:43,370 --> 00:04:46,171
+will convert the data into chunks and the
+
+110
+00:04:46,171 --> 00:04:48,011
+chunks will be pushed into the vector
+
+111
+00:04:48,011 --> 00:04:50,332
+database after that the RAG will be
+
+112
+00:04:50,332 --> 00:04:52,412
+handling all the things like we build a
+
+113
+00:04:52,412 --> 00:04:54,973
+chain and the chain will be invoked by
+
+114
+00:04:54,973 --> 00:04:57,813
+the query soSimilar
+
+115
+00:04:57,813 --> 00:05:00,094
+way&#44; all multiple PDFs are also
+
+116
+00:05:00,654 --> 00:05:02,974
+stored in a single data variable and
+
+117
+00:05:03,294 --> 00:05:05,695
+separated by a backslash N or something
+
+118
+00:05:05,695 --> 00:05:08,255
+called PDF 1&#44; PDF 2 and all and we
+
+119
+00:05:08,255 --> 00:05:10,176
+can get the insights from that. And this
+
+120
+00:05:10,176 --> 00:05:12,056
+is the task 2 which is quite similar to
+
+121
+00:05:12,056 --> 00:05:14,777
+the task one where the data will be
+
+122
+00:05:14,777 --> 00:05:16,897
+enter URL&#44; the URL will be
+
+123
+00:05:17,537 --> 00:05:19,898
+fetched and after that the document
+
+124
+00:05:19,898 --> 00:05:21,738
+documentation generation where for the
+
+125
+00:05:21,738 --> 00:05:24,179
+data can be obtained. By using the line
+
+126
+00:05:24,179 --> 00:05:27,139
+chain or like URL parser&#44; I had used
+
+127
+00:05:27,139 --> 00:05:28,420
+the URL parser of the line chain
+
+128
+00:05:28,420 --> 00:05:30,460
+documents. So after that data will be
+
+129
+00:05:30,460 --> 00:05:33,061
+processed similarly
+
+130
+00:05:33,061 --> 00:05:35,501
+similar to the task one where it can be
+
+131
+00:05:35,501 --> 00:05:37,141
+divided into chunks. The chunks can be
+
+132
+00:05:37,141 --> 00:05:40,022
+divided furtherly into emittings.
+
+133
+00:05:40,182 --> 00:05:41,902
+Emittings are nothing but PD's numerical
+
+134
+00:05:41,902 --> 00:05:44,823
+representation where like they
+
+135
+00:05:44,823 --> 00:05:46,743
+had gone to different databases such as
+
+136
+00:05:47,063 --> 00:05:49,944
+SQL or like no SQL and this is a vector
+
+137
+00:05:49,944 --> 00:05:52,785
+database where it is of vectors. We as
+
+138
+00:05:52,785 --> 00:05:54,945
+we have gone through the like in physics
+
+139
+00:05:54,945 --> 00:05:57,506
+like vector is something but XYZ in the
+
+140
+00:05:57,506 --> 00:05:59,466
+similar way it is something called for
+
+141
+00:05:59,466 --> 00:06:01,867
+numerical representation over there. So
+
+142
+00:06:01,867 --> 00:06:03,547
+by using the GNI embeddings the
+
+143
+00:06:03,787 --> 00:06:05,627
+embeddings will be created and it will be
+
+144
+00:06:05,627 --> 00:06:07,508
+pushed into the vector database. So
+
+145
+00:06:07,508 --> 00:06:09,268
+furtherly it will be handled by the rag.
+
+146
+00:06:09,708 --> 00:06:12,589
+We have built a chain of rag and
+
+147
+00:06:12,669 --> 00:06:14,429
+it will be invoked furtherly by using the
+
+148
+00:06:14,509 --> 00:06:17,470
+like user query. So this is the
+
+149
+00:06:17,470 --> 00:06:19,950
+UI for the task one. Here is the UA for
+
+150
+00:06:19,950 --> 00:06:22,391
+the task one single PDF multiple PDF. It
+
+151
+00:06:22,391 --> 00:06:24,871
+will be handled based upon the
+
+152
+00:06:24,871 --> 00:06:27,432
+situation that like we the the
+
+153
+00:06:27,472 --> 00:06:30,072
+hackathon members have provided 2 tasks
+
+154
+00:06:30,072 --> 00:06:32,713
+over here. So single PDF will be charting
+
+155
+00:06:32,713 --> 00:06:34,193
+with single PDF&#44; multiple PDF will be
+
+156
+00:06:34,193 --> 00:06:36,274
+comparison and all and we can go through
+
+157
+00:06:36,274 --> 00:06:38,194
+there in our demonstration. But this is
+
+158
+00:06:38,194 --> 00:06:41,155
+the like UA for the second task
+
+159
+00:06:41,155 --> 00:06:43,915
+and here we will provide the link
+
+160
+00:06:43,955 --> 00:06:45,556
+and send the prompt over here.
+
+161
+00:06:46,596 --> 00:06:49,076
+So let us go to the demonstration purpose
+
+162
+00:06:49,076 --> 00:06:49,277
+now.
+
+163
+00:06:58,756 --> 00:06:59,157
+main
+
+164
+00:07:07,158 --> 00:07:09,719
+it's running so let us handle singlepedia
+
+165
+00:07:09,719 --> 00:07:12,680
+first so which can be
+
+166
+00:07:12,680 --> 00:07:14,680
+like one minute give me a minute
+
+167
+00:07:25,673 --> 00:07:27,153
+let me adjust the camera once
+
+168
+00:07:46,498 --> 00:07:47,258
+it's fine
+
+169
+00:07:50,939 --> 00:07:53,659
+so it got it's getting uploaded you can
+
+170
+00:07:53,659 --> 00:07:55,500
+observe here OCR has been performed over
+
+171
+00:07:55,580 --> 00:07:58,460
+here and we can write the query
+
+172
+00:07:58,460 --> 00:07:58,700
+now
+
+173
+00:08:06,922 --> 00:08:09,163
+like this was the page number okay
+
+174
+00:08:15,244 --> 00:08:17,325
+Like I had given the prompt to it, it
+
+175
+00:08:17,325 --> 00:08:19,445
+will go to the right like get the
+
+176
+00:08:19,445 --> 00:08:22,126
+similarity search and similarity search
+
+177
+00:08:22,126 --> 00:08:23,966
+will be performed and furtherly it is
+
+178
+00:08:23,966 --> 00:08:25,407
+handled the LLM which is
+
+179
+00:08:27,967 --> 00:08:30,368
+running. OK, you can observe here
+
+180
+00:08:30,688 --> 00:08:33,168
+all the degree percentages have been
+
+181
+00:08:33,168 --> 00:08:35,569
+obtained over here. So
+
+182
+00:08:36,289 --> 00:08:38,050
+let me open the PDF over there.
+
+183
+00:08:40,850 --> 00:08:41,730
+Let me open the PDF.
+
+184
+00:08:47,412 --> 00:08:50,212
+OK you can observe this thing on the
+
+185
+00:08:50,212 --> 00:08:53,013
+degree unemployment rate had been passed
+
+186
+00:08:53,013 --> 00:08:54,813
+over here because we have performed
+
+187
+00:08:54,853 --> 00:08:57,534
+course here. So we have got these things
+
+188
+00:08:57,974 --> 00:09:00,775
+and another thing is under like get
+
+189
+00:09:00,775 --> 00:09:03,495
+these things. So for
+
+190
+00:09:03,495 --> 00:09:06,216
+better prompting I'm like adjusting the
+
+191
+00:09:06,216 --> 00:09:08,457
+prompt that had been given in the
+
+192
+00:09:09,057 --> 00:09:10,937
+evaluation page. So I'm improving the
+
+193
+00:09:10,937 --> 00:09:11,257
+prompt.
+
+194
+00:09:13,498 --> 00:09:16,378
+So let me prompt like this tabular
+
+195
+00:09:16,378 --> 00:09:18,219
+data which is
+
+196
+00:09:19,939 --> 00:09:20,459
+table
+
+197
+00:09:23,420 --> 00:09:25,340
+which is
+
+198
+00:09:39,024 --> 00:09:40,784
+in a proper.
+
+199
+00:09:46,785 --> 00:09:48,226
+Let me give this query once.
+
+200
+00:09:49,746 --> 00:09:52,507
+So it does like every time the Gemini
+
+201
+00:09:53,667 --> 00:09:56,388
+API will be used. So I have integrated
+
+202
+00:09:56,388 --> 00:09:58,908
+the Gemini API in the dot EME itself.
+
+203
+00:10:00,709 --> 00:10:03,309
+So the prompt is searching
+
+204
+00:10:03,909 --> 00:10:05,670
+something and it
+
+205
+00:10:06,790 --> 00:10:09,351
+will be handled by after that.
+
+206
+00:10:10,951 --> 00:10:12,391
+So here is the table format.
+
+207
+00:10:14,792 --> 00:10:17,273
+So individual LLM. But these
+
+208
+00:10:17,513 --> 00:10:19,593
+values are correct.
+
+209
+00:10:20,553 --> 00:10:21,834
+You can observe the behavior
+
+210
+00:10:24,474 --> 00:10:27,355
+here. It's
+
+211
+00:10:27,475 --> 00:10:29,435
+exact table that had been passed
+
+212
+00:10:30,156 --> 00:10:32,796
+here. Let me make up that note.
+
+213
+00:10:33,956 --> 00:10:36,717
+OK, you can observe all the things
+
+214
+00:10:36,717 --> 00:10:39,118
+having successfully passed.
+
+215
+00:10:39,605 --> 00:10:42,005
+So let's go to the multiple PDF.
+
+216
+00:10:43,445 --> 00:10:45,246
+So I'm giving my custom PDF over here.
+
+217
+00:10:49,046 --> 00:10:51,486
+like let me give this material
+
+218
+00:10:52,566 --> 00:10:53,286
+and html
+
+219
+00:11:00,727 --> 00:11:02,647
+and html here
+
+220
+00:11:03,527 --> 00:11:05,328
+and let me give a short period for
+
+221
+00:11:06,328 --> 00:11:08,168
+sentimental analysis products release
+
+222
+00:11:09,528 --> 00:11:11,208
+so let me give these two periods
+
+223
+00:11:15,249 --> 00:11:17,929
+here you can observe here thisOCR will be
+
+224
+00:11:17,929 --> 00:11:20,489
+handled on every time. So
+
+225
+00:11:22,129 --> 00:11:22,649
+what we use
+
+226
+00:11:26,650 --> 00:11:27,930
+from the
+
+227
+00:11:37,851 --> 00:11:40,251
+chat set the prompt so it will analyze
+
+228
+00:11:40,291 --> 00:11:42,531
+and we will be handling as we have
+
+229
+00:11:42,531 --> 00:11:43,371
+discussed before.
+
+230
+00:11:47,532 --> 00:11:50,332
+so the query has been sent to the backend
+
+231
+00:11:50,972 --> 00:11:52,572
+so it is running on the LM
+
+232
+00:11:54,252 --> 00:11:55,533
+so here
+
+233
+00:11:58,333 --> 00:12:00,893
+here it is based on the
+
+234
+00:12:00,893 --> 00:12:01,933
+product this is the
+
+235
+00:12:03,773 --> 00:12:06,494
+it had given a table that we have these
+
+236
+00:12:06,534 --> 00:12:07,134
+things are there
+
+237
+00:12:09,374 --> 00:12:12,334
+okayAnd
+
+238
+00:12:12,334 --> 00:12:14,894
+we had even different thing, but it like
+
+239
+00:12:15,375 --> 00:12:17,295
+it has a list and given in the table
+
+240
+00:12:17,295 --> 00:12:19,695
+format because we have done the table
+
+241
+00:12:19,855 --> 00:12:21,495
+previously. So it will handle
+
+242
+00:12:21,495 --> 00:12:23,575
+accordingly. OK,
+
+243
+00:12:24,175 --> 00:12:27,096
+so let us go through the second task now.
+
+244
+00:12:27,296 --> 00:12:28,576
+So I'm stopping the server.
+
+245
+00:12:30,656 --> 00:12:32,576
+OK, let us run this.
+
+246
+00:12:35,136 --> 00:12:37,377
+So here I need to provide the list
+
+247
+00:12:38,017 --> 00:12:40,817
+like with a comma. So, let
+
+248
+00:12:40,817 --> 00:12:42,817
+us go through this website first So, let
+
+249
+00:12:50,418 --> 00:12:52,658
+us go to the academic panel
+
+250
+00:12:58,019 --> 00:12:58,419
+here
+
+251
+00:13:01,579 --> 00:13:04,019
+like we can keep a comma here and change
+
+252
+00:13:04,019 --> 00:13:06,980
+the comma and set
+
+253
+00:13:07,460 --> 00:13:07,860
+this
+
+254
+00:13:23,941 --> 00:13:25,021
+Let's hit enter.
+
+255
+00:13:27,062 --> 00:13:29,382
+So the data will be passing over these
+
+256
+00:13:29,382 --> 00:13:32,342
+URLs when the data has been passed. So
+
+257
+00:13:32,342 --> 00:13:34,022
+we can ask questions like.
+
+258
+00:13:37,703 --> 00:13:39,143
+Tell me about
+
+259
+00:13:41,223 --> 00:13:42,343
+the academics.
+
+260
+00:13:53,064 --> 00:13:53,784
+It's processing.
+
+261
+00:13:56,505 --> 00:13:58,905
+OK, it's given a short. It had given a
+
+262
+00:13:58,905 --> 00:13:59,865
+short thing. OK,
+
+263
+00:14:02,505 --> 00:14:03,705
+let us what does the
+
+264
+00:14:06,586 --> 00:14:07,146
+website.
+
+265
+00:14:09,546 --> 00:14:10,106
+describe
+
+266
+00:14:16,667 --> 00:14:17,707
+ok let's check this one
+
+267
+00:14:23,227 --> 00:14:26,187
+still processing again let me process
+
+268
+00:14:26,187 --> 00:14:28,908
+again the website highlights recent news
+
+269
+00:14:29,108 --> 00:14:31,068
+events and notes in
+
+270
+00:14:31,868 --> 00:14:34,348
+Washington ok these are the two tasks
+
+271
+00:14:34,668 --> 00:14:37,069
+they are like they can be they are like
+
+272
+00:14:37,229 --> 00:14:39,149
+used for this oneOK, like
+
+273
+00:14:40,949 --> 00:14:43,829
+these are the small areas of files, but
+
+274
+00:14:43,829 --> 00:14:45,949
+we had gone the main major things.
+
+275
+00:14:47,230 --> 00:14:49,150
+So let us go to the
+
+276
+00:14:50,270 --> 00:14:53,150
+code once. So here you
+
+277
+00:14:53,150 --> 00:14:55,470
+can observe that we had used the
+
+278
+00:14:55,550 --> 00:14:58,511
+subprocess because we had used
+
+279
+00:14:58,511 --> 00:15:01,071
+this OCR where subprocess dot
+
+280
+00:15:01,071 --> 00:15:03,631
+OCR and all these things. I had used the
+
+281
+00:15:03,631 --> 00:15:06,271
+sub process remaining all the of
+
+282
+00:15:06,351 --> 00:15:09,152
+document like line chain things and dot
+
+283
+00:15:09,152 --> 00:15:12,112
+DNV has been used for GMI and has been
+
+284
+00:15:12,112 --> 00:15:15,072
+used for. So let me divide the thing
+
+285
+00:15:15,072 --> 00:15:17,793
+single PDF, multiple PDF. So
+
+286
+00:15:17,793 --> 00:15:20,313
+firstly the like we need to choose the
+
+287
+00:15:20,313 --> 00:15:22,633
+single PDF and here we had gone through
+
+288
+00:15:22,633 --> 00:15:25,553
+the single PDF now and. No,
+
+289
+00:15:25,553 --> 00:15:27,914
+here we had used the chroma dot from
+
+290
+00:15:27,914 --> 00:15:29,554
+documents which is quite similar to our
+
+291
+00:15:29,554 --> 00:15:32,394
+quadrant. So firstly it will perform
+
+292
+00:15:32,394 --> 00:15:34,274
+most here and after that it will load the
+
+293
+00:15:34,274 --> 00:15:36,914
+PDFs and it will like
+
+294
+00:15:36,994 --> 00:15:39,955
+perform like chunks over there and the
+
+295
+00:15:39,955 --> 00:15:42,835
+chunks will be perform like pushing
+
+296
+00:15:42,835 --> 00:15:45,715
+this chunks into the vector database over
+
+297
+00:15:45,715 --> 00:15:48,636
+here. So LME's Gen. A as I
+
+298
+00:15:48,636 --> 00:15:51,516
+had discussed before the like. Here
+
+299
+00:15:51,516 --> 00:15:53,956
+is the dot ENV file. I had provided the
+
+300
+00:15:54,436 --> 00:15:56,596
+API key over there and here is a
+
+301
+00:15:56,596 --> 00:15:58,597
+comparison or something prompt off like
+
+302
+00:15:58,597 --> 00:16:01,117
+that. So here the user will be giving a
+
+303
+00:16:01,117 --> 00:16:03,477
+prompt. After that it will be handling
+
+304
+00:16:03,637 --> 00:16:05,557
+using the rag chain. So let me
+
+305
+00:16:07,478 --> 00:16:10,198
+like here you can check that chain.
+
+306
+00:16:10,278 --> 00:16:13,238
+Here is a like we
+
+307
+00:16:13,398 --> 00:16:15,318
+as I had discussed before it is a QR
+
+308
+00:16:15,318 --> 00:16:17,639
+chain retrieval action basically.
+
+309
+00:16:18,279 --> 00:16:20,879
+So here or the chain will be invoked. And
+
+310
+00:16:20,879 --> 00:16:22,599
+in the input will be processed furtherly.
+
+311
+00:16:23,559 --> 00:16:26,319
+So in a similar way. OK, so we had gone
+
+312
+00:16:26,319 --> 00:16:27,800
+through the single one, so let us go
+
+313
+00:16:27,800 --> 00:16:30,600
+through the multiple one now. So here you
+
+314
+00:16:30,600 --> 00:16:32,440
+can check that here is the multiple PDF.
+
+315
+00:16:32,840 --> 00:16:34,960
+Similar thing, but all the docs will be
+
+316
+00:16:34,960 --> 00:16:36,760
+stored in a list format and the list
+
+317
+00:16:36,760 --> 00:16:39,561
+format will be uh like. We had
+
+318
+00:16:39,561 --> 00:16:41,481
+joined these thing and we had gone
+
+319
+00:16:41,481 --> 00:16:44,321
+through the Chroma DB as similar to the
+
+320
+00:16:44,601 --> 00:16:47,121
+before one and we have defined a
+
+321
+00:16:47,401 --> 00:16:49,762
+context over here, context over here and
+
+322
+00:16:49,762 --> 00:16:52,562
+we have you are an A assistant for
+
+323
+00:16:52,562 --> 00:16:54,642
+comparison task like that. We had defined
+
+324
+00:16:54,642 --> 00:16:57,482
+something of like that and so that it
+
+325
+00:16:57,482 --> 00:16:59,803
+will be handled properly. So here is the
+
+326
+00:16:59,803 --> 00:17:02,443
+prop and all these thing
+
+327
+00:17:02,923 --> 00:17:05,003
+like this is defined over here. System
+
+328
+00:17:05,003 --> 00:17:07,763
+will be this and human will be this
+
+329
+00:17:07,883 --> 00:17:10,124
+this is like. quite
+
+330
+00:17:11,964 --> 00:17:14,204
+ohh similar to OpenAI
+
+331
+00:17:14,604 --> 00:17:17,044
+where we define systemized user.
+
+332
+00:17:17,404 --> 00:17:20,365
+So here also we had defined by by
+
+333
+00:17:20,365 --> 00:17:23,045
+using the Gemini. So this is the
+
+334
+00:17:23,645 --> 00:17:26,405
+thing and similar thing will be performed
+
+335
+00:17:26,405 --> 00:17:29,326
+now here. Thank you. And next
+
+336
+00:17:31,246 --> 00:17:32,366
+I need to discuss with
+
+337
+00:17:34,206 --> 00:17:36,206
+this task to similar thing but.
+
+338
+00:17:37,326 --> 00:17:38,727
+I had as I had discussed in the
+
+339
+00:17:38,727 --> 00:17:40,287
+introduction, I had used this
+
+340
+00:17:41,847 --> 00:17:44,527
+where it is here
+
+341
+00:17:45,727 --> 00:17:48,448
+first thing over here unstructured URL
+
+342
+00:17:48,528 --> 00:17:51,408
+loader. I had used this one and I
+
+343
+00:17:51,408 --> 00:17:53,928
+had passed these URLs and I had obtained
+
+344
+00:17:53,928 --> 00:17:56,528
+the data and the data will be recursively
+
+345
+00:17:57,008 --> 00:17:58,769
+turned into chunks and the chunks will be
+
+346
+00:17:58,969 --> 00:18:01,289
+given to the vector DB and vector DB will
+
+347
+00:18:01,289 --> 00:18:03,689
+be handling by using the as I have
+
+348
+00:18:03,689 --> 00:18:06,049
+discussed before it is the like.
+
+349
+00:18:07,009 --> 00:18:09,970
+similarity search and we have got
+
+350
+00:18:09,970 --> 00:18:12,170
+the similarity search results and it will
+
+351
+00:18:12,170 --> 00:18:14,930
+be handled by Chen. So this is the
+
+352
+00:18:14,930 --> 00:18:16,530
+simple code and
+
+353
+00:18:17,810 --> 00:18:20,211
+the issues faced by
+
+354
+00:18:21,171 --> 00:18:22,371
+by building this project is
+
+355
+00:18:24,051 --> 00:18:27,011
+with OCR and this chroma divi
+
+356
+00:18:27,051 --> 00:18:29,972
+and so let me show the chroma
+
+357
+00:18:29,972 --> 00:18:32,852
+divi shown. So here I have
+
+358
+00:18:32,852 --> 00:18:35,172
+written the codeIn this morning
+
+359
+00:18:35,332 --> 00:18:38,212
+where I had faced the
+
+360
+00:18:38,252 --> 00:18:41,093
+issue of from a DB so I need
+
+361
+00:18:41,093 --> 00:18:44,053
+to clear the. So this is the
+
+362
+00:18:44,133 --> 00:18:47,093
+issue too and the future
+
+363
+00:18:47,333 --> 00:18:49,494
+like I can improve this project by
+
+364
+00:18:49,894 --> 00:18:51,854
+building a OS dot remove by removing
+
+365
+00:18:51,854 --> 00:18:53,814
+unnecessary files after every these
+
+366
+00:18:53,814 --> 00:18:56,374
+things and make some
+
+367
+00:18:56,694 --> 00:18:58,454
+better UI. So
+
+368
+00:18:59,575 --> 00:19:01,535
+upon the verification purpose I have
+
+369
+00:19:02,615 --> 00:19:05,095
+done the simple UI. So
+
+370
+00:19:05,735 --> 00:19:08,055
+these are the issues and improvements
+
+371
+00:19:08,055 --> 00:19:11,016
+that that can that I can perform in this
+
+372
+00:19:11,736 --> 00:19:14,096
+task. So thank you. Thank you for giving
+
+373
+00:19:14,176 --> 00:19:16,376
+this opportunity and I hope
+
+374
+00:19:18,376 --> 00:19:20,937
+you got a good impression on me.
+
+375
+00:19:21,337 --> 00:19:24,257
+Thank you. Have a good
+
+376
+00:19:24,257 --> 00:19:24,377
+day.
